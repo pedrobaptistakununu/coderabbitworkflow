@@ -10,5 +10,4 @@ jobs:
       - name: Comment on Pull Request
         uses: peter-evans/commit-comment@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           body: '@coderabbitai review'
