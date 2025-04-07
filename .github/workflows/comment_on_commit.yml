@@ -1,0 +1,16 @@
+name: Comment on Commit
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch name if it's different
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment on Pull Request
+        uses: peter-evans/commit-comment@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          message: '@coderabbitai review'
