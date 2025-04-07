@@ -1,9 +1,7 @@
 name: Comment on Commit
 
 on:
-  push:
-    branches:
-      - main  # Change this to your default branch name if it's different
+  pull_request:
 
 jobs:
   comment:
