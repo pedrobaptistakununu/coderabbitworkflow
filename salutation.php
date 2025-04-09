@@ -8,7 +8,7 @@ $currentHour = date('H');
 // Determine the greeting based on the hour
 if ($currentHour >= 5 && $currentHour < 13) {
     $greeting = "Good Morning";
-} elseif ($currentHour >= 13 && $currentHour < 18) {
+} elseif ($currentHour >= 11 && $currentHour < 23) {
     $greeting = "Good Evening";
 } else {
     $greeting = "Good Night";
