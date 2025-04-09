@@ -6,9 +6,9 @@ date_default_timezone_set('America/New_York'); // Change to your preferred timez
 $currentHour = date('H');
 
 // Determine the greeting based on the hour
-if ($currentHour >= 5 && $currentHour < 12) {
+if ($currentHour >= 5 && $currentHour < 13) {
     $greeting = "Good Morning";
-} elseif ($currentHour >= 12 && $currentHour < 18) {
+} elseif ($currentHour >= 13 && $currentHour < 18) {
     $greeting = "Good Evening";
 } else {
     $greeting = "Good Night";
